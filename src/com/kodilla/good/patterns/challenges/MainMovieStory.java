@@ -12,7 +12,7 @@ public class MainMovieStory {
         String result = movieMap.entrySet().stream()
                 .flatMap(m -> m.getValue().stream())
                 .collect(Collectors.joining(" ! ", "The list: ", "."))
-                        .toString();
+                .toString();
         System.out.println(result);
 
          /*System.out.println(movieMap.entrySet().stream()
